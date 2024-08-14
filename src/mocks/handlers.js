@@ -8,7 +8,7 @@ export const handlers = [
 
     return res(
       ctx.data({
-        login: {
+        user: {
           username,
         },
       })
@@ -16,7 +16,7 @@ export const handlers = [
   }),
 
   // Handles a query to return user name
-  graphql.query("GetUserInfo", (req, res, ctx) => {
+  graphql.query("GetUserInfo", (_, res, ctx) => {
     const username = sessionStorage.getItem("username");
 
     return res(

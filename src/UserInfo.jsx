@@ -12,7 +12,9 @@ const GET_USER_INFO = gql`
 const UPDATE_USER_INFO = gql`
   mutation UpdateUserInfo($username: String!) {
     updateUserInfo(username: $username) {
-      username
+      user {
+        username
+      }
     }
   }
 `;
