@@ -1,12 +1,12 @@
-import './App.css';
-import { AppApolloProvider } from './apollo'
-import { UserInfo } from './UserInfo';
+import "./App.css";
+import { AppApolloProvider } from "./apollo";
+import { UserInfo } from "./UserInfo";
 
 function App() {
   return (
     <AppApolloProvider>
       <div className="App">
-        <UserInfo/>
+        <UserInfo />
       </div>
     </AppApolloProvider>
   );
